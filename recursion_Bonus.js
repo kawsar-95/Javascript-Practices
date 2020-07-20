@@ -6,6 +6,9 @@ function fact(num){
     }
     return factorial;
     }
+
+    //Recursive Function
+    
     function recursiveFactorial(num){
         if (num ==1){
             console.log(num);
