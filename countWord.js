@@ -24,3 +24,5 @@ function reverseString(str){
 var status ="Hello from the side";
 var hello = reverseString(status);
 console.log(hello);
+var adeleSong = reverseString("Hello from the other side I must've called a thousand times To tell you I'm sorry");
+console.log(adeleSong);
