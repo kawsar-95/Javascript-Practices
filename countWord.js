@@ -1,12 +1,13 @@
-var status ="I am a good person.I don't snore at night.";
+var status ="I am a good person. I don't snore at night.";
 var count =0;
 for(var i=0; i< status.length;i++){
     var char =status[i];
-    if(char==" " && status[i-1] !=" "){
+    if(char==" " && status[i-1] != " "){
         count++;
     }
 }
 count++;
+console.log(count);
 
 
 // Reverse String
