@@ -1,11 +1,11 @@
 
 function fibonacci(n){
-var fibo=[0,1];
+var fibonacci=[0,1];
 for(var i=2; i<=10;i++){
-    fibo[i]=fibo[i-1]+fibo[i-2];
-    console.log(fibo[i],fibo[i-1],fibo[i-2]);
+    fibonacci[i]=fibonacci[i-1]+fibonacci[i-2];
+    console.log(fibonacci[i],fibonacci[i-1],fibonacci[i-2]);
 }
-return fibo;
+return fibonacci;
 }
 var result =fibonacci(12);
-console.log(fibo);
+console.log(result);
