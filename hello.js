@@ -1,14 +1,14 @@
 // JavaScript CheckGrade
-var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+var students = [['David', 80], ['james', 77], ['Larry', 88], ['green', 95], ['Thomas', 68]];
 
-var Avgmarks = 0;
+var averageMarks = 0;
 
 for (var i=0; i < students.length; i++) {
-        Avgmarks += students[i][1];
-        var avg = (Avgmarks/students.length);
+        averageMarks += students[i][1];
+        var avg = (averageMarks/students.length);
 }
 
-console.log("Average grade: " + (Avgmarks)/students.length);
+console.log("Average grade: " + (averageMarks)/students.length);
 
         if (avg < 60){
           console.log("Grade : F");      
