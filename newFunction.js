@@ -1,10 +1,10 @@
 // WHEN TO USE A FUNCTION, FUNCTION INSIDE AN ARRAY
 
-function evenify_all(nums){
+function evenIf_all(numbs){
     var even_array = [];
-    for (let i= 0; i<nums.length; i++) {
-        const num = nums[i];
-        var result = evenify(num);
+    for (let i= 0; i<numbs.length; i++) {
+        const num = numbs[i];
+        var result = evenIf(num);
         even_array.push(result);
     }
     return even_array;
@@ -15,15 +15,15 @@ function evenify_all(nums){
         // else{
         // console.log(num*2,': is odd number');
         // }
-var nums =[5,10,15,20,25,30];
-var nums_even=evenify_all(nums);
-console.log(nums_even);
+var numbs =[5,10,15,20,25,30];
+var numbs_even=evenIf_all(numbs);
+console.log(numbs_even);
  friends_age =[24,23,25,26,22];
-// evenify_all(friends_age);
+// evenIf_all(friends_age);
 
 //When to return from a function and from where
 
-function evenify(num){
+function evenIf(num){
     var  result;
     if(num % 2== 0){
     // return num;
@@ -36,7 +36,7 @@ function evenify(num){
     }
     return result;
 }
-var result = evenify(13);
+var result = evenIf(13);
 var square = result * result;
 
 console.log('square:',square);
