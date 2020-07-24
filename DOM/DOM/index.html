@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring DOM</title>
+    <style>
+      article {
+        border: 2px solid goldenrod;
+        border-radius: 20px;
+        margin: 5px;
+        padding: 20px;
+      }
+      .special h3 {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h3>Exploring DOM</h3>
+        <!-- <p id="first">No.1 Paragraph</p>
+            <p id="second ">No. 2 paragraph</p> -->
+        <article id="firstArticle">
+          <h3>article-1</h3>
+          <p id="firstGodfather" class="author">author-1</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sunt.
+          </p>
+        </article>
+        <article class="special">
+          <h3>article-2</h3>
+          <p class="author">author-2</p>
+          <p class="description">
+            Libero ab, quae id ratione neque nisi sunt fugit quas?
+          </p>
+        </article>
+        <article class="special">
+          <h3>article-3</h3>
+          <p class="author">author-3</p>
+          <p class="description">
+            Ea asperiores a ut. Asperiores quidem fugit adipisci ducimus sunt!
+          </p>
+        </article>
+        <article>
+          <h3>Grocery List</h3>
+          <ul id="gift-list">
+            <li>gift-item-1</li>
+            <li>gift-item-2</li>
+            <li>gift-item-3</li>
+            <li>gift-item-4</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <script>
+      // var first =document.getElementById('first');
+      // first.style.color= 'green';
+      // first.style.backgroundColor='goldenrod';
+      // first.style.fontSize ='30px';
+      // document.body.style.backgroundColor='tomato';
+      // var authors  = document.querySelectorAll('.special h3');
+      // for(var i=0;i<authors.length;i++){
+      //     var element = authors[i];
+      //     // console.log(element.innerHTML);
+      //     element.innerHTML='Writer-'+i;
+      //     element.setAttribute =('title','Everyone are writers');
+      //     element.style.backgroundColor='lightblue';
+      //     element.style.margin = '10px';
+      // }
+      const article = document.getElementById("firstGodfather");
+      const newParagraph = document.createElement("p");
+      newParagraph.innerHTML = "This is added by The Godfather";
+      article.appendChild(newParagraph);
+
+      //Add More Gift Items
+
+      const ul = document.getElementById("gift-list");
+      const li = document.createElement("li");
+      li.innerHTML = "This is new";
+      ul.appendChild(li);
+    </script>
+  </body>
+</html>

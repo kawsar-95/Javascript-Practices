@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventhandler And EventListener</title>
+  </head>
+  <body>
+    <!-- <h1 onclick="handleClicker()" >Exploring Events</h1>
+    <button onmouseout="handleClicker()">Click me</button> -->
+    <h1>Exploring Events</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit.</p>
+    <button>click me-0</button>
+    <button>click me-1</button>
+    <button id="second">click me-2</button>
+    <button id="lastButton">click me-3</button>
+
+    <script>
+      document
+        .getElementById("lastButton")
+        .addEventListener("click", function () {
+          document.body.style.color = "tomato";
+        });
+
+      // function handleClicker(){
+      // // console.log('Clicked here Confirmed');
+      // document.body.style.backgroundColor ='cyan';
+
+      // }
+      // const secondButton =document.getElementById('second');
+
+      // secondButton.addEventListener('click',handleClicker);
+      // secondButton.onclick = handleClicker();
+      //     console.log('Second Button clicked');
+    </script>
+  </body>
+</html>
