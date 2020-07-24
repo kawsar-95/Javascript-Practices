@@ -1,8 +1,8 @@
-function inchToFeet(inch){
-    var feet = inch/12;
-    return feet; 
+function inchToFeet(inch) {
+  var feet = inch / 12;
+  return feet;
 }
-var feetCalc =[100,200,300];
+var feetCalc = [100, 200, 300];
 
 var feet1 = inchToFeet(feetCalc[0]);
 console.log(feet1);
